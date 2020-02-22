@@ -5,7 +5,15 @@
 {% block content %}
 
 <h1>Hello World!</h1>
+<br/>
+<h1>{{ api.0.AQI }}<br/><br/></h1>
 
+Air Quality: {{ api.0.AQI }}<br/>
+Area: {{ api.0.ReportingArea }}<br/>
+Category: {{ api.0.Category.Name }}<br/><br/>
+Date: {{ api.2.DateObserved }}<br/><br/>
+
+{{ api.2}}<br/><br/>
 
 {% endblock %}
 
